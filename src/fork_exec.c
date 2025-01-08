@@ -16,7 +16,7 @@ void    exec_command(char *arg, char **envp)
         exit(1);
 }
 
-void    exec_process(char **argv, char **envp)
+void    exec_process(char *arg, char **envp)
 {
     pid_t pid;
     int pipe_fds[2];
@@ -30,7 +30,7 @@ void    exec_process(char **argv, char **envp)
     {
         close(pipe_fds[0]);
         dup2(pipe_fds[1], STDOUT_FILENO);
-        exec_command(argv[2], envp);
+        exec_command(arg, envp);
     }
     else
     {

@@ -1,7 +1,4 @@
 #include "../inc/pipex.h"
-#include <unistd.h>
-#include <fcntl.h>
-#include <stdlib.h>
 
 char **get_path_env_var(char **envp)
 {
@@ -38,5 +35,7 @@ char *validate_command(char *arg, char **dirs)
         free(path);
         i++;
     }
-    return (NULL);
+    errno = 3;
+    perror("pipex");
+    exit(EXIT_FAILURE);
 }
