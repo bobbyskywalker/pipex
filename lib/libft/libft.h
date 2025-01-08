@@ -71,6 +71,7 @@ int					ft_printf(const char *format, ...);
 
 //SECTION: new
 void				ft_slc_sort(int *arr, int len);
+void                ft_arr2d_free(char **arr);
 
 // SECTION LINKED LISTS:
 typedef struct s_list
