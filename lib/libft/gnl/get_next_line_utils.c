@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agarbacz <agarbacz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 11:55:59 by agarbacz          #+#    #+#             */
-/*   Updated: 2024/12/16 12:51:34 by agarbacz         ###   ########.fr       */
+/*   Updated: 2025/01/09 13:12:04 by agarbacz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,8 @@ char	*ft_strjoin_gnl(char const *s1, char const *s2)
 
 	if (!s1 || !s2)
 		return (NULL);
-	result = (char *)malloc((ft_strlen_gnl(s1) + ft_strlen_gnl(s2) + 1) * sizeof(char));
+	result = (char *)malloc((ft_strlen_gnl(s1) + ft_strlen_gnl(s2) + 1)
+			* sizeof(char));
 	if (!result)
 		return (NULL);
 	i = 0;

@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -Werror -g
 
 NAME = pipex
 
-SRCS = src/main.c src/fork_exec.c src/parse.c
+SRCS = src/main.c src/fork_exec.c src/parse.c src/error_handlers.c src/pipex.c src/here_doc_utils.c
 
 OBJS = $(SRCS:.c=.o)
 BOBJS = $(BONUS_SRCS:.c=.o)

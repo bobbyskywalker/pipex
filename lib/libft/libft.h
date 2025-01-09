@@ -6,7 +6,7 @@
 /*   By: agarbacz <agarbacz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 13:02:15 by agarbacz          #+#    #+#             */
-/*   Updated: 2024/12/06 10:50:20 by agarbacz         ###   ########.fr       */
+/*   Updated: 2025/01/09 13:13:28 by agarbacz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 // SECTION: INCLUDES
 # include <assert.h>
 # include <limits.h>
+# include <stdarg.h>
+# include <stdint.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-# include <stdarg.h>
-# include <stdint.h>
 
 // SECTION: PROTOTYPES
 int					ft_isalpha(int c);
@@ -69,9 +69,9 @@ int					ft_print_str(char *str);
 int					ft_print_char(char c);
 int					ft_printf(const char *format, ...);
 
-//SECTION: new
+// SECTION: new
 void				ft_slc_sort(int *arr, int len);
-void                ft_arr2d_free(char **arr);
+void				ft_arr2d_free(char **arr);
 
 // SECTION LINKED LISTS:
 typedef struct s_list

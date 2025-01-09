@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agarbacz <agarbacz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 11:55:57 by agarbacz          #+#    #+#             */
-/*   Updated: 2024/12/16 12:51:29 by agarbacz         ###   ########.fr       */
+/*   Updated: 2025/01/09 13:12:21 by agarbacz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_BONUS_H
-# define GET_NEXT_LINE_BONUS_H
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
 # include <fcntl.h>
 # include <stdio.h>
@@ -22,7 +22,8 @@
 #  define BUFFER_SIZE 1
 # endif
 
-// an sll node structure built to effectively store multiple fd's and their contents
+// an sll node structure built to effectively
+// store multiple fd's and their contents
 typedef struct s_fd_content_storage
 {
 	int		fd;
