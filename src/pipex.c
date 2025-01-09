@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "../inc/pipex.h"
-#include <fcntl.h>
 
 // high level function, checks for here_doc as input file presence
 // the 'i' argv index changes if here_doc is present due to LIMITER
@@ -33,7 +32,7 @@ void	pipex(bool is_here_doc, int argc, char **argv, char **envp)
 	{
 		fd_in = open(argv[1], O_RDONLY, 0777);
 		fd_out = open(argv[argc - 1], O_WRONLY | O_CREAT | O_TRUNC, 0777);
-		i = 3;
+		i = 2;
 	}
 	file_errors(fd_in, fd_out);
 	dup2(fd_in, STDIN_FILENO);
